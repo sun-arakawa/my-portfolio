@@ -10,6 +10,11 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+ /*!
+ メインの色
+ --bs-primary-rgb
+ のみ変更
+  */
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -41,7 +46,7 @@
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
-  --bs-primary-rgb: 61, 192, 56;
+  --bs-primary-rgb: 16,15,15;
   --bs-secondary-rgb: 108, 117, 125;
   --bs-success-rgb: 25, 135, 84;
   --bs-info-rgb: 13, 202, 240;
@@ -237,11 +242,11 @@ sup {
 }
 
 a {
-  color: #3dc038;
+  color: rgba(var(--bs-primary-rgb));
   text-decoration: underline;
 }
 a:hover {
-  color: #3d9938;
+  color: rgba(var(--bs-primary-rgb));
 }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
